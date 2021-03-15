@@ -1,5 +1,14 @@
 ## BOT UNOFFICIAL
-Public bot for LINE APP
+```
+    _             _            __                        __
+   (_)___ ___    (_)_  _______/ /_____ _____  ____  ____/ /
+  / / __ `__ \  / / / / / ___/ __/ __ `/ __ \/ __ \/ __  /
+ / / / / / / / / / /_/ (__  ) /_/ /_/ / /_/ / /_/ / /_/ /
+/_/_/ /_/ /_/_/ /\__,_/____/\__/\__, /\____/\____/\__,_/
+           /___/               /____/
+
+SIMPLE PUBLIC BOT FOR LINE APP BY IMJUSTGOOD.COM - FLEX VERSION
+```
 <p>
     <a href="https://imjustgood.com/team" rel="nofollow">
         <img alt="Developer" src="https://img.shields.io/badge/Build%20by-Imjustgood-red" height="20"  style="max-width:100%;">
@@ -12,16 +21,13 @@ Public bot for LINE APP
     </a>
 </p>
 
-
-### Requirment
-Python3 to up
-
 ### Installation
 ```python
 pip3 install justgood
 pip3 install thrift
 pip3 install json
 pip3 install livejson
+pip3 install random
 pip3 install requests
 ```
 
