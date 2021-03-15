@@ -33,6 +33,8 @@ $ git clone https://github.com/RendyTR/LINE-PublicBOT
 $ cd LINE-PublicBOT
 $ python3 client.py
 ```
+Type ```allowliff``` to enable flex mode.
+
 ### Authtoken
 Input your Authtoken or change your Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
 
@@ -51,6 +53,3 @@ Free apikey : ```imjustgood```
         </tr>
     <tbody>   
 <table>
-
-### Note
-Type ```allowliff``` to enable flex mode.
