@@ -233,4 +233,4 @@ class Object(object):
                     try:self.findAndAddContactsByMid(a)
                     except:pass
             if a not in flist:
-               self.sendMention(uid[2],f"Hi @! , thanks for this :)\ngithub.com/rendytr/line-publicbot-v2",[uid[2]])
+               self.sendMention(uid[2],f"Hi @! , thanks for this :)\ngithub.com/rendytr/line-publicbot",[uid[2]])
