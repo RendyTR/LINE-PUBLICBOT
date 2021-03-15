@@ -1,4 +1,5 @@
 ## BOT UNOFFICIAL
+SIMPLE PUBLIC BOT FOR LINE APP
 ```
     _             _            __                        __
    (_)___ ___    (_)_  _______/ /_____ _____  ____  ____/ /
@@ -6,8 +7,6 @@
  / / / / / / / / / /_/ (__  ) /_/ /_/ / /_/ / /_/ / /_/ /
 /_/_/ /_/ /_/_/ /\__,_/____/\__/\__, /\____/\____/\__,_/
            /___/               /____/
-
-SIMPLE PUBLIC BOT FOR LINE APP BY IMJUSTGOOD.COM - FLEX VERSION
 ```
 <p>
     <a href="https://imjustgood.com/team" rel="nofollow">
