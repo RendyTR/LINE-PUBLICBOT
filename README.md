@@ -43,9 +43,9 @@ Free apikey : ```imjustgood```
 <table>
     <tbody>
         <tr>
-          <td><a href="http://imjustgood.com/team">Team</a></td>
-          <td><a href="http://api.imjustgood.com/custom/forum">Forum</a></td>
-          <td><a href="http://api.imjustgood.com/custom/tools">Others</a></td>
+          <td><a href="http://imjustgood.com/team">&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;</a></td>
+          <td><a href="http://api.imjustgood.com/custom/forum">&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;</a></td>
+          <td><a href="http://api.imjustgood.com/custom/tools">&nbsp;&nbsp;&nbsp;Others&nbsp;&nbsp;&nbsp;</a></td>
         </tr>
     <tbody>   
 <table>
