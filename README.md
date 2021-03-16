@@ -1,7 +1,7 @@
 ## BOT UNOFFICIAL
 SIMPLE PUBLIC BOT FOR LINE APP
 
-<img alt="Sample.jpg" src= "https://i.ibb.co/F8Q06Zt/Sample.jpg" height="400">
+<img alt="Sample.jpg" src= "https://i.ibb.co/F8Q06Zt/Sample.jpg">
 
 ```
 █ █▀▄▀█   █ █ █ █▀ ▀█▀ █▀▀ █▀█ █▀█ █▀▄
