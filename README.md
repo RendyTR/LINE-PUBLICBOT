@@ -1,5 +1,5 @@
 ## BOT UNOFFICIAL
-SIMPLE PUBLIC BOT FOR LINE APP ( FLEX VERSION )
+SIMPLE PUBLIC BOT FOR LINE APP
 
 <img alt="Sample.jpg" src= "https://i.ibb.co/F8Q06Zt/Sample.jpg">
 <p>
