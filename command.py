@@ -4,7 +4,6 @@ from justgood import imjustgood
 import os,sys,re,ast,json,requests,time
 import traceback,threading,livejson,random
 
-
 '''
 
     DONT CHANGE OR REMOVE IF YOU ARE NOT SURE WHAT YOU DO :)
@@ -12,7 +11,6 @@ import traceback,threading,livejson,random
     THIS SCRIPT USING PUBLIC APIKEY FROM API.IMJUSTGOOD.COM WITH RATE LIMIT 50 REQUEST PERDAYS.
 
     GET YOUR PREMIUM APIKEY HERE : https://api.imjustgood.com/intro
-
 
 '''
 
@@ -36,15 +34,20 @@ class justgood(threading.Thread):
         }
 
     def notified_invite_into_group(self, op):
-        group = op.param1
+        to = op.param1
         if self.uid in op.param3:
-            self.client.acceptGroupInvitation(group)
+            self.client.acceptGroupInvitation(to)
             if op.param2 in self.master or self.join == True:
-                self.client.sendOA(group)
+                rname = self.key["rname"]
+                if rname != "":
+                   rname =  rname + " "
+                text = f"Thanks @!\nType ` {rname}help ` for menu."
+                self.client.sendMention(to,text,[op.param2])
+                self.client.sendOA(to)
             else:
-                self.client.sendMessage(group,"Permission denied")
-                self.client.sendOA(group)
-                self.client.leaveGroup(group)
+                self.client.sendMessage(to,"Permission denied")
+                self.client.sendOA(to)
+                self.client.leaveGroup(to)
 
     def notified_read_message(self,op):
         group = op.param1
@@ -95,7 +98,6 @@ class justgood(threading.Thread):
                         result = self.flex.help()
                         self.client.sendFlex(to,result)
 
-
                     '''
 
                        MEDIA MENU COMMANDS
@@ -104,9 +106,7 @@ class justgood(threading.Thread):
 
                        https://api.imjustgood.com/custom/cmd 
 
-
                     '''
-
 
                     if text.startswith(rname + "youtube"):
                         query = text.split("youtube")[1]
