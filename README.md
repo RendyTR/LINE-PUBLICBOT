@@ -2,13 +2,6 @@
 SIMPLE PUBLIC BOT FOR LINE APP
 
 <img alt="Sample.jpg" src= "https://i.ibb.co/F8Q06Zt/Sample.jpg">
-
-```
-█ █▀▄▀█   █ █ █ █▀ ▀█▀ █▀▀ █▀█ █▀█ █▀▄
-█ █ ▀ █ █▄█ █▄█ ▄█  █  █▄█ █▄█ █▄█ █▄▀
-API MEDIA SERVICE TO MAKE YOUR CODE MORE BETTER
-```
-
 <p>
     <a href="https://imjustgood.com/team" rel="nofollow">
         <img alt="Developer" src="https://img.shields.io/badge/Build%20by-Imjustgood-red" height="20"  style="max-width:100%;">
