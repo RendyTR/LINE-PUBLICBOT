@@ -5,9 +5,7 @@ class autobots(object):
     '''
 
         DONT CHANGE OR REMOVE IF YOU ARE NOT SURE WHAT YOU DO :)
-
         TEMPLATE BY : THE AUTOBOTS CORPORATION (STANDAR DESIGN)
-
 
     '''
 
@@ -133,12 +131,18 @@ class autobots(object):
         return result
 
     def smule(self,data):
-        avatar = data["avatar"]
+        avatar = data["pictureUrl"]
         username = data["username"]
-        album = "";num = 0
-        for i in data["recording"]:
-            num += 1
-            album += f"{num}. {i['title']}\n"
+        album = f"ID : {data['accountId']}"
+        album = f"\nFullname : {data['fullname']}"
+        album = f"\nUsername : {data['username']}"
+        album = f"\nVIP : {data['vip']}"
+        album = f"\nVerified : {data['verified']}"
+        album = f"\nLocation : {data['location']}"
+        album = f"\nFollowers : {data['followers']}"
+        album = f"\nFollowing : {data['following']}"
+        album = f"\nRecording : {data['recording']}"
+        album = f"\nBiography : {data['biography']}"
         result = {"type": "bubble", "size": "kilo", "body": {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": "Smule", "weight": "bold", "size": "xxs", "color": "#3ac927"} ], "position": "absolute", "borderWidth": "1px", "borderColor": "#3ac927", "cornerRadius": "50px", "paddingTop": "2px", "paddingBottom": "3px", "paddingAll": "10px", "offsetTop": "15px", "offsetStart": "15px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "image", "url": avatar, "aspectRatio": "1:1", "aspectMode": "cover", "action": {"type": "uri", "uri": avatar }, "align": "center"} ], "cornerRadius": "100px"} ], "alignItems": "center", "paddingTop": "40px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": username, "weight": "bold", "align": "center", "color": "#ffffffcc"} ], "paddingTop": "5px", "paddingBottom": "20px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": "Recording", "weight": "bold", "color": "#ffffffcc", "size": "sm"} ], "paddingTop": "5px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": album[:-1], "size": "xxs", "color": "#ffffffcc", "wrap": True } ], "paddingAll": "10px", "paddingTop": "5px"} ], "paddingAll": "10px", "paddingStart": "15px", "paddingEnd": "15px", "paddingBottom": "10px"}, "styles": {"body": {"backgroundColor": "#121212"} } }
         return result
 
