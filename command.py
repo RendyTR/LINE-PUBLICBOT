@@ -143,8 +143,8 @@ class justgood(threading.Thread):
                         if query.startswith("dl: http"):
                             self.client.sendMessage(to,"Downloading..")
                             data = self.media.tiktokdl(link)
-                            result = data['result']['videoUrl']
-                            self.client.sendVideoWithURL(to,result)    
+                            result = data['result']['watermark']
+                            self.client.sendVideoWithURL(to,result)
                         if query.startswith(": "):
                             data = self.media.tiktok(search)
                             main = data['result']
@@ -642,16 +642,18 @@ class justgood(threading.Thread):
                             python = sys.executable
                             os.execl(python, python, * sys.argv)
 
-                    if text == rname + "allowliff":
-                        if level in self.master:
-                            self.client.allowFlex()
-                            self.client.sendReplyMessage(ids,to,"Flex mode enabled.")
-
                     if text.startswith(rname + "autojoin "):
                         if level in self.master:
                             main = text.split("autojoin ")[1]
                             if main == "on":self.join = True;self.client.sendReplyMessage(ids,to,"Autojoin enabled.")
                             if main == "off":self.join = False;self.client.sendReplyMessage(ids,to,"Autojoin disabled.")
+
+                    if text == rname + "allowliff":
+                        if level in self.master:
+                            try:
+                                self.client.allowFlex()
+                                self.client.sendReplyMessage(ids,to,"Flex mode enabled.")
+                            except:self.client.sendReplyMessage(ids,to,"Click and allow url to enable flex\nline://app/1603264152-Bdymw76d")
 
                     if text.startswith(rname + "apikey: "):
                         if level in self.master:
