@@ -134,15 +134,15 @@ class autobots(object):
         avatar = data["pictureUrl"]
         username = data["username"]
         album = f"ID : {data['accountId']}"
-        album = f"\nFullname : {data['fullname']}"
-        album = f"\nUsername : {data['username']}"
-        album = f"\nVIP : {data['vip']}"
-        album = f"\nVerified : {data['verified']}"
-        album = f"\nLocation : {data['location']}"
-        album = f"\nFollowers : {data['followers']}"
-        album = f"\nFollowing : {data['following']}"
-        album = f"\nRecording : {data['recording']}"
-        album = f"\nBiography : {data['biography']}"
+        album += f"\nFullname : {data['fullname']}"
+        album += f"\nUsername : {data['username']}"
+        album += f"\nVIP : {data['vip']}"
+        album += f"\nVerified : {data['verified']}"
+        album += f"\nLocation : {data['location']}"
+        album += f"\nFollowers : {data['followers']}"
+        album += f"\nFollowing : {data['following']}"
+        album += f"\nRecording : {data['recording']}"
+        album += f"\nBiography : {data['biography']}"
         result = {"type": "bubble", "size": "kilo", "body": {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": "Smule", "weight": "bold", "size": "xxs", "color": "#3ac927"} ], "position": "absolute", "borderWidth": "1px", "borderColor": "#3ac927", "cornerRadius": "50px", "paddingTop": "2px", "paddingBottom": "3px", "paddingAll": "10px", "offsetTop": "15px", "offsetStart": "15px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "image", "url": avatar, "aspectRatio": "1:1", "aspectMode": "cover", "action": {"type": "uri", "uri": avatar }, "align": "center"} ], "cornerRadius": "100px"} ], "alignItems": "center", "paddingTop": "40px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": username, "weight": "bold", "align": "center", "color": "#ffffffcc"} ], "paddingTop": "5px", "paddingBottom": "20px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": "Recording", "weight": "bold", "color": "#ffffffcc", "size": "sm"} ], "paddingTop": "5px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": album[:-1], "size": "xxs", "color": "#ffffffcc", "wrap": True } ], "paddingAll": "10px", "paddingTop": "5px"} ], "paddingAll": "10px", "paddingStart": "15px", "paddingEnd": "15px", "paddingBottom": "10px"}, "styles": {"body": {"backgroundColor": "#121212"} } }
         return result
 
@@ -209,11 +209,15 @@ class autobots(object):
 
     def pornstar(self,data):
         lonte = data["pornstar"].upper()
-        biodata = f"Birth       :  {data['birth']}"
-        biodata += f"\nCountry  :  {data['country']}"
-        biodata += f"\nBreast    :  {data['breast']}"
-        biodata += f"\nHeight    :  {data['height']}"
-        biodata += f"\nTits        :  {data['tits']}"
+        biodata = f"Gender : {data['gender']}"
+        biodata += f"\nBirth : {data['birth']}"
+        biodata += f"\nCountry : {data['country']}"
+        biodata += f"\nHeight : {data['height']}"
+        if data['gender'] == "male":
+            biodata += f"\nDick : {data['dick']}"
+        if data['gender'] == "female":
+            biodata += f"\nTits : {data['tits']}"
+            biodata += f"\nBreast : {data['breast']}"
         result = {"type": "bubble", "size": "kilo", "body": {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "horizontal", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": "Pornstars", "weight": "bold", "color": "#eea60b"} ], "flex": 0, "paddingEnd": "15px", "justifyContent": "center", "paddingStart": "5px"} ], "backgroundColor": "#141414", "paddingAll": "13px"}, {"type": "box", "layout": "vertical", "contents": [{"type": "box", "layout": "vertical", "contents": [{"type": "text", "text": lonte, "size": "xs", "weight": "bold", "wrap": True, "color": "#ffffff"}, {"type": "text", "text": biodata, "size": "xxs", "margin": "lg", "wrap": True, "color": "#ffffff"} ], "backgroundColor": "#000000cc", "paddingAll": "20px", "paddingBottom": "30px"} ], "backgroundColor": "#ee8b0b", "paddingAll": "20px"} ], "paddingAll": "0px"} }
         return result
 
