@@ -13,7 +13,7 @@ SIMPLE PUBLIC BOT FOR LINE APP
         <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=green&label=Update" height="20" style="max-width:100%;">
     </a>
     <a href="https://github.com/RendyTR" rel="nofollow">
-        <img alt="VIEWS" src="https://komarev.com/ghpvc/?username=RendyTR&label=Views" height="20" style="max-width:100%;">
+        <img alt="VIEWS" src="https://komarev.com/ghpvc/?username=RendyTR&color=green&label=Views" height="20" style="max-width:100%;">
     </a>
 </p>
 
