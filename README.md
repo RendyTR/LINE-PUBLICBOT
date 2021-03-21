@@ -3,14 +3,11 @@ SIMPLE PUBLIC BOT FOR LINE APP
 
 <img alt="Sample.jpg" src= "https://i.ibb.co/F8Q06Zt/Sample.jpg">
 <p>
-    <a href="https://imjustgood.com/team" rel="nofollow">
-        <img alt="Developer" src="https://img.shields.io/badge/Build%20by-Imjustgood-red" height="20"  style="max-width:100%;">
-    </a>
     <a href="http://pypi.org/project/justgood" rel="nofollow">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/justgood?label=PyPI" style="max-width:100%;">
     </a>
     <a href="https://github.com/RendyTR/LINE-PublicBOT" rel="nofollow">
-        <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=green&label=Update" height="20" style="max-width:100%;">
+        <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=red&label=Update" height="20" style="max-width:100%;">
     </a>
     <a href="https://github.com/RendyTR" rel="nofollow">
         <img alt="VIEWS" src="https://komarev.com/ghpvc/?username=RendyTR&color=green&label=Views" height="20" style="max-width:100%;">
@@ -40,8 +37,8 @@ Input your Authtoken or change your Email and Password <a href="https://github.c
 ### Apikey
 Free Apikey : ```imjustgood```
 <br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/2119f04bcdf6fe33eec71f6746fd0bbb57d31b85/data/api.json#L2">here.</a>
-<br><br>Free Apikey is Public Usage ( 50 Hits/Days )
-<br>Contact our team to upgrade Premium Apikey ( 3000 Hits/Days )
+<br><br>Free Apikey is Public Usage (50 Hits/Days)
+<br>Contact our team to upgrade Premium Apikey (3000 Hits/Days)
 
 <table>
     <tbody>
