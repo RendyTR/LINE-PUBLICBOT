@@ -54,5 +54,4 @@ Free Apikey : ```imjustgood```
 <table>
 
 ### Note
-This script use flex message only.
-<br>Type ```allowliff``` to enable the flex.
+This script use flex message only, type ```allowliff``` to enable the flex.
