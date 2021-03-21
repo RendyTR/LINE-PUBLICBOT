@@ -39,10 +39,10 @@ $ python3 client.py
 Input your Authtoken or change your Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
 
 ### Apikey
-Free apikey : ```imjustgood```
+Free Apikey : ```imjustgood```
 <br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/2119f04bcdf6fe33eec71f6746fd0bbb57d31b85/data/api.json#L2">here.</a>
-<br>Free apikey is public usage ( 50 Hits/Days )
-<br><br>Contact our team to upgrade Premium Apikey ( 3000 Hits/Days )
+<br><br>Free Apikey is Public Usage ( 50 Hits/Days )
+<br>Contact our team to upgrade Premium Apikey ( 3000 Hits/Days )
 
 <table>
     <tbody>
