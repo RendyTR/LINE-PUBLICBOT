@@ -12,6 +12,9 @@ SIMPLE PUBLIC BOT FOR LINE APP
     <a href="https://github.com/RendyTR/LINE-PublicBOT" rel="nofollow">
         <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=green&label=Update" height="20" style="max-width:100%;">
     </a>
+    <a href="https://github.com/RendyTR" rel="nofollow">
+        <img alt="VIEWS" src="https://komarev.com/ghpvc/?username=RendyTR&label=Views" height="20" style="max-width:100%;">
+    </a>
 </p>
 
 ### Installation
@@ -30,6 +33,7 @@ $ git clone https://github.com/RendyTR/LINE-PublicBOT
 $ cd LINE-PublicBOT
 $ python3 client.py
 ```
+* Type ```allowliff``` to enable flex mode.
 
 ### Authtoken
 Input your Authtoken or change your Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
@@ -37,8 +41,8 @@ Input your Authtoken or change your Email and Password <a href="https://github.c
 ### Apikey
 Free apikey : ```imjustgood```
 <br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/2119f04bcdf6fe33eec71f6746fd0bbb57d31b85/data/api.json#L2">here.</a>
-<br><br>Free apikey is public usage (50 Hit/Days)
-<br>Contact our team for upgrade to Premium Apikey (3000 Hit/Days)
+<br>Free apikey is public usage ( 50 Hits/Days )
+<br><br>Contact our team to upgrade Premium Apikey ( 3000 Hits/Days )
 
 <table>
     <tbody>
@@ -49,6 +53,3 @@ Free apikey : ```imjustgood```
         </tr>
     <tbody>   
 <table>
-
-### NOTE
-Type ```allowliff``` to enable flex mode.
