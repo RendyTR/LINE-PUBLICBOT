@@ -10,7 +10,7 @@ SIMPLE PUBLIC BOT FOR LINE APP
         <img alt="PyPI" src="https://img.shields.io/pypi/v/justgood?label=PyPI" style="max-width:100%;">
     </a>
     <a href="https://github.com/RendyTR/LINE-PublicBOT" rel="nofollow">
-        <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=green&label=Last%20update" height="20" style="max-width:100%;">
+        <img alt="Update" src="https://img.shields.io/github/last-commit/rendytr/LINE-PublicBOT?color=green&label=Update" height="20" style="max-width:100%;">
     </a>
 </p>
 
