@@ -32,7 +32,7 @@ $ python3 client.py
 ```
 
 ### Authtoken
-Input your Authtoken or Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
+Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
 
 ### Apikey
 Free Apikey : ```imjustgood```
@@ -51,4 +51,5 @@ Free Apikey : ```imjustgood```
 <table>
 
 ### Note
-This script full using the flex messages , Type ```allowliff``` to enable it.
+This script full using the flex messages ,
+<br>Type ```allowliff``` to enable it.
