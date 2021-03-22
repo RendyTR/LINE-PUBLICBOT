@@ -32,7 +32,7 @@ $ python3 client.py
 ```
 
 ### Authtoken
-Input your Authtoken or change your Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
+Input your Authtoken or Email and Password <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
 
 ### Apikey
 Free Apikey : ```imjustgood```
