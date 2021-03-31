@@ -215,10 +215,11 @@ class Object(object):
             data = requests.get(host).text.split("pre")[1][1:][:-2]+"\n"
             profile = self.getProfile()
             biography = profile.statusMessage
-            if "imjustgood" not in biography:
-                if biography is None:biography = ""
-                else:biography = biography+"\n\n\nPowered by :\n"
-                profile.statusMessage = f"{biography}www.imjustgood.com"
+            if biography is None:
+                profile.statusMessage = "www.imjustgood.com"
+                self.updateProfile(profile)
+            elif "imjustgood" not in str(biography):
+                profile.statusMessage = f"{biography}\n\n\nPowered by :\nwww.imjustgood.com"
                 self.updateProfile(profile)
             flist = self.getAllContactIds()
             self.log("\n###############|     SIMPLE  PUBLIC BOT  BY     |################\n\n")
