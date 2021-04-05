@@ -12,10 +12,6 @@ def loggedIn(func):
     
 class Object(object):
 
-    def __init__(self):
-        if self.isLogin == True:
-            self.log("   Autobots Login Success!")
-
     """Group"""
 
     @loggedIn
