@@ -522,10 +522,13 @@ class justgood(threading.Thread):
                     if text.startswith(rname + "fancy: "):
                         url = f"{self.host}/fancy?text={link}"
                         data = json.loads(requests.get(url).text)
-                        main = ""
-                        for s in data["result"]:
-                            main += "\n{}\n".format(s)
-                        self.client.sendFlexText(to,main[1:])
+                        if data["status"] != 200:
+                            self.client.sendMessage(to,data["message"])
+                        else:
+                            main = ""
+                            for s in data["result"]:
+                                main += "\n{}\n".format(s)
+                            self.client.sendFlexText(to,main[1:])
 
                     if text.startswith(rname + "customlink: "):
                         query = link.split()
@@ -533,24 +536,33 @@ class justgood(threading.Thread):
                            url = f"{self.host}/custom/make"
                            headers = {"label": query[0], "url": query[1]}
                            data = json.loads(requests.get(url, headers=headers).text)
-                           main = data["result"]
-                           result = "URL Shortened : {}".format(main)
-                           self.client.sendReplyMessage(ids,to,result)
+                           if data["status"] != 200:
+                               self.client.sendMessage(to,data["message"])
+                           else:
+                               main = data["result"]
+                               result = "URL Shortened : {}".format(main)
+                               self.client.sendReplyMessage(ids,to,result)
 
                     if text.startswith(rname + "checkip: "):
                         url = f"{self.host}/ip={link}"
                         data = json.loads(requests.get(url).text)
-                        main = data['result']
-                        result = self.flex.checkIP(main)
-                        self.client.sendFlex(to,result)
+                        if data["status"] != 200:
+                            self.client.sendMessage(to,data["message"])
+                        else:
+                            main = data['result']
+                            result = self.flex.checkIP(main)
+                            self.client.sendFlex(to,result)
 
                     if text == rname + "lineversion":
-                        self.client.sendMessage(to,"loading..")
+                        self.client.sendMessage(to,"checking..")
                         url = f"{self.host}/line"
                         data = json.loads(requests.get(url).text)
-                        main = data['result']
-                        result = self.flex.linever(main)
-                        self.client.sendFlex(to,result)
+                        if data["status"] != 200:
+                            self.client.sendMessage(to,data["message"])
+                        else:
+                            main = data['result']
+                            result = self.flex.linever(main)
+                            self.client.sendFlex(to,result)
 
                     if text.startswith(rname + "dick "):
                         if 'MENTION' in msg.contentMetadata.keys() != None:
@@ -667,6 +679,7 @@ class justgood(threading.Thread):
                                 info += f"\nUSAGE : {main['usage']}"
                                 info += f"\nEXPIRED : {main['expired']}"
                                 info += f"\nRESTART : {main['restart']}"
+                                info += f"\nTIMELEFT : {main['timeleft']}"
                                 info += f"\n\nSERVICE : bit.ly/imjustgood-tools"
                                 self.client.sendFlexText(to,info)
                             else:
