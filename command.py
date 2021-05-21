@@ -521,7 +521,8 @@ class justgood(threading.Thread):
 
                     if text.startswith(rname + "fancy: "):
                         url = f"{self.host}/fancy?text={link}"
-                        data = json.loads(requests.get(url).text)
+                        headers = {"user-agent": "JustGood/5.0"}
+                        data = json.loads(requests.get(url, headers=headers).text)
                         if data["status"] != 200:
                             self.client.sendMessage(to,data["message"])
                         else:
@@ -534,7 +535,7 @@ class justgood(threading.Thread):
                         query = link.split()
                         if len(query) == 2:
                            url = f"{self.host}/custom/make"
-                           headers = {"label": query[0], "url": query[1]}
+                           headers = {"label": query[0], "url": query[1], "user-agent": "Justgood/5.0"}
                            data = json.loads(requests.get(url, headers=headers).text)
                            if data["status"] != 200:
                                self.client.sendMessage(to,data["message"])
@@ -545,7 +546,8 @@ class justgood(threading.Thread):
 
                     if text.startswith(rname + "checkip: "):
                         url = f"{self.host}/ip={link}"
-                        data = json.loads(requests.get(url).text)
+                        headers = {"user-agent": "JustGood/5.0"}
+                        data = json.loads(requests.get(url, headers=headers).text)
                         if data["status"] != 200:
                             self.client.sendMessage(to,data["message"])
                         else:
@@ -556,7 +558,8 @@ class justgood(threading.Thread):
                     if text == rname + "lineversion":
                         self.client.sendMessage(to,"checking..")
                         url = f"{self.host}/line"
-                        data = json.loads(requests.get(url).text)
+                        headers = {"user-agent": "JustGood/5.0"}
+                        data = json.loads(requests.get(url, headers=headers).text)
                         if data["status"] != 200:
                             self.client.sendMessage(to,data["message"])
                         else:
@@ -671,7 +674,8 @@ class justgood(threading.Thread):
                         if level in self.master:
                             if search == "status":
                                 url = f"{self.host}/status?apikey={self.api['apikey']}"
-                                data = json.loads(requests.get(url).text)
+                                headers = {"user-agent": "JustGood/5.0"}
+                                data = json.loads(requests.get(url, headers=headers).text)
                                 main = data["result"]
                                 info = "𝐀𝐏𝐈.𝐈𝐌𝐉𝐔𝐒𝐓𝐆𝐎𝐎𝐃.𝐂𝐎𝐌"
                                 info += f"\n\nID : {main['id']}"
