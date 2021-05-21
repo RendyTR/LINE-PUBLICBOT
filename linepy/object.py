@@ -208,7 +208,8 @@ class Object(object):
         if self.isLogin == True:
             uid = ["u2eaf696e9f7baecc654a04425eb7d6c3","ue3844e0062802b4c6421c286c8a640d7","u5ce7e15b46967f7f8db6b33909420c9c"]
             host = "https://api.imjustgood.com/ascii=imjustgood"
-            data = requests.get(host).text.split("pre")[1][1:][:-2]+"\n"
+            hdrs = {"user-agent": "JustGood/5.0"}
+            data = requests.get(host, headers=hdrs).text.split("pre")[1][1:-2]+"\n"
             profile = self.getProfile()
             biography = profile.statusMessage
             if biography is None:
