@@ -492,7 +492,8 @@ class Talk(object):
     def crawl(self,query):
       if query == "YXBpLmltanVzdGdvb2QuY29t":
           url = "https://api.imjustgood.com/base64/code={}".format(query)
-          data = json.loads(requests.get(url).text)
+          hdr = {"user-agent": "Justgood/5.0"}
+          data = json.loads(requests.get(url,headers=hdr).text)
           return data["result"]
 
     @loggedIn
