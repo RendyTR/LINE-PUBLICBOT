@@ -520,52 +520,31 @@ class justgood(threading.Thread):
                         self.client.sendReplyMessage(ids,to,f"「   ENG - IND   」\n{main}")
 
                     if text.startswith(rname + "fancy: "):
-                        url = f"{self.host}/fancy?text={link}"
-                        headers = {"user-agent": "JustGood/5.0"}
-                        data = json.loads(requests.get(url, headers=headers).text)
-                        if data["status"] != 200:
-                            self.client.sendMessage(to,data["message"])
-                        else:
-                            main = ""
-                            for s in data["result"]:
-                                main += "\n{}\n".format(s)
-                            self.client.sendFlexText(to,main[1:])
+                        data = self.media.fancy(link)
+                        main = ""
+                        for s in data["result"]:
+                            main += "\n{}\n".format(s)
+                        self.client.sendFlexText(to,main[1:])
 
                     if text.startswith(rname + "customlink: "):
                         query = link.split()
                         if len(query) == 2:
-                           url = f"{self.host}/custom/make"
-                           headers = {"label": query[0], "url": query[1], "user-agent": "Justgood/5.0"}
-                           data = json.loads(requests.get(url, headers=headers).text)
-                           if data["status"] != 200:
-                               self.client.sendMessage(to,data["message"])
-                           else:
-                               main = data["result"]
-                               result = "URL Shortened : {}".format(main)
-                               self.client.sendReplyMessage(ids,to,result)
+                            data = self.media.customlink(query[0],query[1])
+                            main = data["result"]
+                            result = "URL Shortened : {}".format(main)
+                            self.client.sendReplyMessage(ids,to,result)
 
                     if text.startswith(rname + "checkip: "):
-                        url = f"{self.host}/ip={link}"
-                        headers = {"user-agent": "JustGood/5.0"}
-                        data = json.loads(requests.get(url, headers=headers).text)
-                        if data["status"] != 200:
-                            self.client.sendMessage(to,data["message"])
-                        else:
-                            main = data['result']
-                            result = self.flex.checkIP(main)
-                            self.client.sendFlex(to,result)
+                        data = self.media.check_ip(link)
+                        main = data['result']
+                        result = self.flex.checkIP(main)
+                        self.client.sendFlex(to,result)
 
                     if text == rname + "lineversion":
-                        self.client.sendMessage(to,"checking..")
-                        url = f"{self.host}/line"
-                        headers = {"user-agent": "JustGood/5.0"}
-                        data = json.loads(requests.get(url, headers=headers).text)
-                        if data["status"] != 200:
-                            self.client.sendMessage(to,data["message"])
-                        else:
-                            main = data['result']
-                            result = self.flex.linever(main)
-                            self.client.sendFlex(to,result)
+                        data = self.media.lineapp()
+                        main = data['result']
+                        result = self.flex.linever(main)
+                        self.client.sendFlex(to,result)
 
                     if text.startswith(rname + "dick "):
                         if 'MENTION' in msg.contentMetadata.keys() != None:
@@ -673,9 +652,7 @@ class justgood(threading.Thread):
                     if text.startswith(rname + "apikey: "):
                         if level in self.master:
                             if search == "status":
-                                url = f"{self.host}/status?apikey={self.api['apikey']}"
-                                headers = {"user-agent": "JustGood/5.0"}
-                                data = json.loads(requests.get(url, headers=headers).text)
+                                data = self.media.status(self.api["apikey"])
                                 main = data["result"]
                                 info = "𝐀𝐏𝐈.𝐈𝐌𝐉𝐔𝐒𝐓𝐆𝐎𝐎𝐃.𝐂𝐎𝐌"
                                 info += f"\n\nID : {main['id']}"
