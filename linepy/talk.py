@@ -392,10 +392,10 @@ class Talk(object):
 
     @loggedIn
     def main(self):
-       data = db["justGood"]
-       if data == "" or data !="YXBpLmltanVzdGdvb2QuY29t":
-          raise Exception('CC-ERROR')
-       return data
+        data = db["justGood"]
+        if data == "" or data !="YXBpLmltanVzdGdvb2QuY29t":
+            raise Exception('CC-ERROR')
+        return data
 
     @loggedIn
     def getContactWithFriendRequestStatus(self, id):
@@ -490,11 +490,11 @@ class Talk(object):
 
     @loggedIn
     def crawl(self,query):
-      if query == "YXBpLmltanVzdGdvb2QuY29t":
-          url = "https://api.imjustgood.com/base64/code?q=".format(query)
-          hdr = {"user-agent": "Justgood/5.0"}
-          data = json.loads(requests.get(url,headers=hdr).text)
-          return data["result"]
+        if query == "YXBpLmltanVzdGdvb2QuY29t":
+            url = "https://api.imjustgood.com/base64/code?q="+query
+            hdr = {"User-Agent": "Justgood/5.0"}
+            data = json.loads(requests.get(url, headers=hdr).text)
+            return data["result"]
 
     @loggedIn
     def getGroupIdsInvited(self):
