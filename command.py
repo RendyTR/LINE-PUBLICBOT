@@ -652,7 +652,7 @@ class justgood(threading.Thread):
                     if text.startswith(rname + "apikey: "):
                         if level in self.master:
                             if search == "status":
-                                data = self.media.status(self.api["apikey"])
+                                data = self.media.status()
                                 main = data["result"]
                                 info = "𝐀𝐏𝐈.𝐈𝐌𝐉𝐔𝐒𝐓𝐆𝐎𝐎𝐃.𝐂𝐎𝐌"
                                 info += f"\n\nID : {main['id']}"
