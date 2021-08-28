@@ -17,11 +17,7 @@ SIMPLE PUBLIC BOT FOR LINE APP
 ### Installation
 ```python
 pip3 install justgood
-pip3 install thrift
-pip3 install json
 pip3 install livejson
-pip3 install random
-pip3 install requests
 ```
 
 ### How to run ?
@@ -37,7 +33,7 @@ Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT
 ### Apikey
 Free Apikey : ```imjustgood```
 <br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/2119f04bcdf6fe33eec71f6746fd0bbb57d31b85/data/api.json#L2">here.</a>
-<br><br>Free Apikey is Public Usage (50 Hits/Days)
+<br><br>Free Apikey is Public Usage (20 Hits/Days)
 <br>Contact our team to upgrade Premium Apikey (3000 Hits/Days)
 
 <table>
