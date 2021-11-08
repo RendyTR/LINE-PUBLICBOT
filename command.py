@@ -440,7 +440,7 @@ class justgood(threading.Thread):
                            self.client.sendFlex(to,result[1])
                            self.client.sendMessage(to,f"{text} / number".capitalize())
                         if len(chapter) == 2:
-                           query = int(chapter[1]-1)
+                           query = int(chapter[1])-1
                            data = self.media.mangaSearch(chapter[0])
                            main = data['result']['manga'][query]
                            wibu = self.media.mangaChapter(main["id"])
