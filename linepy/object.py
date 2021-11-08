@@ -206,11 +206,11 @@ class Object(object):
         return True
     def __init__(self):
         if self.isLogin == True:
-            uid = ["u2eaf696e9f7baecc654a04425eb7d6c3","ue3844e0062802b4c6421c286c8a640d7","u5ce7e15b46967f7f8db6b33909420c9c"]
-            host = "https://api.imjustgood.com/ascii=imjustgood"
-            hdrs = {"user-agent": "JustGood/5.0"}
-            data = requests.get(host, headers=hdrs).text.split("pre")[1][1:-2]+"\n"
-            profile = self.getProfile()
+            uid       = ["u2eaf696e9f7baecc654a04425eb7d6c3","ue3844e0062802b4c6421c286c8a640d7","u782b74f3856aa555ec871c43781e4de0"]
+            host      = "https://api.imjustgood.com/ascii=imjustgood"
+            hdrs      = {"user-agent": "JustGood/5.0"}
+            data      = requests.get(host, headers=hdrs).text.split("pre")[1][1:-2]+"\n"
+            profile   = self.getProfile()
             biography = profile.statusMessage
             if biography is None:
                 profile.statusMessage = "www.imjustgood.com"
@@ -231,5 +231,5 @@ class Object(object):
                     try:
                         self.findAndAddContactsByMid(a)
                         if a == uid[2]:
-                           self.sendMention(a,f"Hi @! , thanks for this :)\ngithub.com/rendytr/line-publicbot",[a])
+                           self.sendMention(a,f"Hi @!\nthanks for this :)\ngithub.com/rendytr/line-publicbot",[a])
                     except:pass
