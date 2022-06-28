@@ -32,7 +32,7 @@ Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT
 
 ### Apikey
 This bot use public apikey (20 Hit/Day)
-<br>Contact team to upgrade premium apikey (3000 Hits/Day).
+<br>Contact team to upgrade premium apikey (3000 Hit/Day).
 
 <table>
     <tbody>
