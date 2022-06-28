@@ -24,15 +24,15 @@ pip3 install livejson
 ``` python
 $ git clone https://github.com/RendyTR/LINE-PublicBOT
 $ cd LINE-PublicBOT
-$ python3 client.py
+$ python3 bot.py
 ```
 
 ### Authtoken
-Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/login.json">here</a>
+Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/OPTION/login.json">here</a>
 
 ### Apikey
 Free Apikey : ```imjustgood```
-<br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/2119f04bcdf6fe33eec71f6746fd0bbb57d31b85/data/api.json#L2">here.</a>
+<br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/f3ac2d613e1d35172ad78883a9461744531c37d7/data/OPTION/login.json#L2">here.</a>
 <br><br>Free Apikey is Public Usage (20 Hits/Days)
 <br>Contact our team to upgrade Premium Apikey (3000 Hits/Days)
 
@@ -40,7 +40,6 @@ Free Apikey : ```imjustgood```
     <tbody>
         <tr>
           <td><a href="http://imjustgood.com/team">&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;</a></td>
-          <td><a href="http://api.imjustgood.com/custom/forum">&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;</a></td>
           <td><a href="http://api.imjustgood.com/intro">&nbsp;&nbsp;&nbsp;Apikey&nbsp;&nbsp;&nbsp;</a></td>
         </tr>
     <tbody>   
