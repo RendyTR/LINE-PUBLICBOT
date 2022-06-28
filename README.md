@@ -31,19 +31,18 @@ $ python3 bot.py
 Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/OPTION/login.json">here</a>
 
 ### Apikey
-Free Apikey : ```imjustgood```
-<br>Input the apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/f3ac2d613e1d35172ad78883a9461744531c37d7/data/OPTION/login.json#L2">here.</a>
-<br><br>Free Apikey is Public Usage (20 Hits/Days)
-<br>Contact our team to upgrade Premium Apikey (3000 Hits/Days)
+This bot use public apikey (20 Hit/Day)
+<br>Contact team to upgrade premium apikey (3000 Hits/Day).
 
 <table>
     <tbody>
         <tr>
-          <td><a href="http://imjustgood.com/team">&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;</a></td>
-          <td><a href="http://api.imjustgood.com/intro">&nbsp;&nbsp;&nbsp;Apikey&nbsp;&nbsp;&nbsp;</a></td>
+          <td><a href="http://imjustgood.com/team">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+          <td><a href="http://api.imjustgood.com/intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apikey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
         </tr>
     <tbody>   
 <table>
+Input your premium apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/f3ac2d613e1d35172ad78883a9461744531c37d7/data/OPTION/login.json#L2">here.</a>
 
 ### Note
 This script full using flex messages,
