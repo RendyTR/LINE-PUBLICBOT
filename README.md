@@ -42,7 +42,7 @@ This bot use public apikey (20 Hit/Day)
         </tr>
     <tbody>   
 <table>
-Input your premium apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/f3ac2d613e1d35172ad78883a9461744531c37d7/data/OPTION/login.json#L2">here.</a>
+Input your premium apikey <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/a322db27af91b1bca5498c69e83eb2a12a337d00/data/OPTION/login.json#L2">here.</a>
 
 ### Note
 This script full using flex messages,
