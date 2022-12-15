@@ -62,7 +62,7 @@ class Auth(object):
                 connecting = json.load(fp)
             req = json.loads(requests.get(
                 self.server.JUSTGOOD_API+"/status",
-                headers={'User-Agent': 'Justgood/5.0'},
+                headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) Chrome/51.0.2704.106'},
                 params={'apikey': str(connecting['apikey'])}
             ).text)
             if req['status'] in [429,200]:
@@ -137,7 +137,7 @@ class Auth(object):
         if systemName is None:systemName = self.server.SYSTEM_NAME
         if appName is None:appName   = self.server.APP_NAME
         mainData    = self.__loadPermission()
-        mainHeaders = {"User-Agent": "Justgood/5.0", "apikey": mainData[0], "appName": appName, "sysName": systemName, "cert": mainData[1] }
+        mainHeaders = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/51.0.2704.106", "apikey": mainData[0], "appName": appName, "sysName": systemName, "cert": mainData[1] }
         data        = json.loads(requests.get(self.server.JUSTGOOD_API+"/lineqr", headers=mainHeaders).text)
         if data["status"] == 200:
             result        = "\n  ***  LINE SECONDARY LOGIN REQUEST  ***\n"
