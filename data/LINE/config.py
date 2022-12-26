@@ -30,10 +30,10 @@ class Config(object):
         'JUSTGOOD_LIFF': '1603264152'
     }
 
-    APP_TYPE    = 'CHROMEOS'
-    APP_VER     = '2.5.3'
+    APP_TYPE    = 'DESKTOPWIN'
+    APP_VER     = '7.13.2'
     SYSTEM_NAME = 'IMJUSTGOOD'
-    SYSTEM_VER  = '102.0'
+    SYSTEM_VER  = '10.0'
     IP_ADDR     = '8.8.8.8'
     CARRIER     = '51089, 1-0'
     URL_REGEX   = re.compile(r'^(?:http|ftp)s?://' r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' r'localhost|' r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' r'(?::\d+)?' r'(?:/?|[/?]\S+)$', re.IGNORECASE)
