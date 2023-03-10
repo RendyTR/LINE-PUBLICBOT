@@ -30,10 +30,6 @@ $ python3 bot.py
 ### Authtoken
 Input your Authtoken or Email <a href="https://github.com/RendyTR/LINE-PublicBOT/blob/main/data/OPTION/login.json">here</a>
 
-### Apikey
-This bot use public apikey (20 Hit/Day)
-<br>Contact team to upgrade premium apikey (3000 Hit/Day).
-
 <table>
     <tbody>
         <tr>
